@@ -17,41 +17,44 @@
        </style>
 </head>
 <body class="text-gray-800">
-
   <header class="bg-white py-4 shadow-sm sticky top-0 z-50">
-    <nav class="container mx-auto flex justify-between items-center px-4">
-        <div class="flex items-center">
-           <a href="index.html" >  <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3"></a>
-        </div>
+        <nav class="bg-white">
+            <div class="container mx-auto px-4 md:flex items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="index.html"> <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3"></a>
+                    <!-- mobile menu icon -->
+                    <div class="md:hidden flex items-center">
+                        <button type="button" class="mobile-menu-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
+                <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
+                    <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
+                    <!-- Dropdown menu -->
+                    <div class="relative">
+                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
+                            <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
+                            <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
+                            <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
+                            <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
+                            <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
+                            <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
+                        </div>
+                    </div>
+                    <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
+                    <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
+                    <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
 
-        <ul class="hidden md:flex space-x-6" id="desktop-menu">
-            <li><a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a></li>
-            <li><a href="services.html" class="text-gray-600 hover:text-gray-900">Services</a></li>
-            <li><a href="why-us.html" class="text-gray-600 hover:text-gray-900">Why Us</a></li>
-            <li><a href="about-us.html" class="text-gray-600 hover:text-gray-900">About Us</a></li>
-            <li><a href="join-us.html" class="text-gray-600 hover:text-gray-900">Join Us</a></li>
-            <li><a href="contact-us.html" class="text-gray-600 hover:text-gray-900">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm py-2">
-        <ul class="flex flex-col items-center space-y-4">
-            <li><a href="index.html" class="block text-gray-600 hover:text-gray-900 py-2">Home</a></li>
-            <li><a href="services.html" class="block text-gray-600 hover:text-gray-900 py-2">Services</a></li>
-            <li><a href="why-us.html" class="block text-gray-600 hover:text-gray-900 py-2">Why Us</a></li>
-            <li><a href="about-us.html" class="block text-gray-600 hover:text-gray-900 py-2">About Us</a></li>
-            <li><a href="join-us.html" class="block text-gray-600 hover:text-gray-900 py-2">Join Us</a></li>
-            <li><a href="contact-us.html" class="block text-gray-600 hover:text-gray-900 py-2">Contact Us</a></li>
-        </ul>
-    </div>
+                </div>
+            </div>
+        </nav>
 </header>
 
     <main>
@@ -180,42 +183,52 @@
 
     <script>
         // JavaScript for smooth scrolling and showing/hiding detailed service sections
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+   
+        document.addEventListener("DOMContentLoaded", () => {
+  // Select all dropdown toggle buttons
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      // Find the next sibling element which is the dropdown menu
+      const dropdownMenu = toggle.nextElementSibling
 
-                if (targetElement) {
-                    // Hide all detailed service sections
-                    document.querySelectorAll('section[id$="-engagement"], section[id$="-building"], section[id$="-consulting"], section[id$="-digitization"], section[id$="-support"]').forEach(section => {
-                        section.classList.add('hidden');
-                    });
+      // Toggle the 'hidden' class to show or hide the dropdown menu
+      if (dropdownMenu.classList.contains("hidden")) {
+        // Hide any open dropdown menus before showing the new one
+        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+          menu.classList.add("hidden")
+        })
 
-                    // If the target is a detailed service section, show it
-                    if (targetId.includes('-engagement') || targetId.includes('-building') || targetId.includes('-consulting') || targetId.includes('-digitization') || targetId.includes('-support')) {
-                        targetElement.classList.remove('hidden');
-                    }
+        dropdownMenu.classList.remove("hidden")
+      } else {
+        dropdownMenu.classList.add("hidden")
+      }
+    })
+  })
 
-                    // Smooth scroll to the target element
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // JavaScript for showing/hiding Privacy Policy and Terms of Use modals
-        document.querySelector('footer a[href="#privacy-policy"]').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('privacy-policy').classList.remove('hidden');
-        });
-
-        document.querySelector('footer a[href="#terms-of-use"]').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('terms-of-use').classList.remove('hidden');
-        });
+  // Clicking outside of an open dropdown menu closes it
+  window.addEventListener("click", function (e) {
+    if (!e.target.matches(".dropdown-toggle")) {
+      document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+        if (!menu.contains(e.target)) {
+          menu.classList.add("hidden")
+        }
+      })
+    }
+  })
+  
+  // Mobile menu toggle
+  
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.navigation-menu')
+  
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+  })
+  
+  
+})
     </script>
 </body>
 </html>
