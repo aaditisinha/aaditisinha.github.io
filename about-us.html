@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerTable Ventures</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <style>
-        @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
-        body {
-           font-family: "Nunito", sans-serif;
+        @font-face {
+            font-family: 'Giaza';
+            src: url('Giaza.otf');
         }
-        h1, h2, h3, h4, h5, h6 {
-              font-family: 'Giaza', serif; /* For headings */
+
+        body {
+            font-family: "Nunito", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Giaza', serif;
+            /* For headings */
         }
     </style>
 </head>
 
 <body class="text-gray-800">
 
-  <header class="bg-white py-4 shadow-sm sticky top-0 z-50">
+    <header class="bg-white py-4 shadow-sm sticky top-0 z-50">
         <nav class="bg-white">
             <div class="container mx-auto px-4 md:flex items-center gap-6">
                 <!-- Logo -->
@@ -29,26 +41,35 @@
                     <!-- mobile menu icon -->
                     <div class="md:hidden flex items-center">
                         <button type="button" class="mobile-menu-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                             </svg>
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
+                <div
+                    class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
                     <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
                     <!-- Dropdown menu -->
                     <div class="relative">
-                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
+                        <button type="button"
+                            class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
                             <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
                         </button>
                         <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
-                            <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
-                            <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
-                            <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
-                            <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
-                            <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
+                            <a href="services.html#strategy-engagement"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
+                            <a href="services.html#brand-building"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
+                            <a href="services.html#hands-on-consulting"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
+                            <a href="services.html#digitization"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
+                            <a href="services.html#fundraising-support"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
                         </div>
                     </div>
                     <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
@@ -58,7 +79,7 @@
                 </div>
             </div>
         </nav>
-</header>
+    </header>
 
     <main>
         <section id="home" class="hero-background py-20 px-4 text-center" style="background-color: #00357a;">
@@ -72,71 +93,80 @@
             <div class="container mx-auto max-w-5xl">
                 <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Why we started HerTable Ventures</h2>
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div>
+                    <div style="border:2px solid #ffde59;padding:20px;border-radius:20px 0;">
                         <h3 class="text-2xl font-semibold text-gray-800 mb-4">The Operational Challenge</h3>
                         <p class="text-gray-700 mb-4 text-justify">
-                            After reentering the F&B world and launching two restaurants, Arpita Ganesh — a serial entrepreneur with decades of experience — found herself battling the daily grind alone. No playbook, no support, no one to help make sense of the chaos. She saw how
-                            many women in food were doing everything — cooking, managing, hiring, financing — but without the guidance or systems to scale.
+                            After reentering the F&B world and launching two restaurants, Arpita Ganesh — a serial
+                            entrepreneur with decades of experience — found herself battling the daily grind alone. No
+                            playbook, no support, no one to help make sense of the chaos. She saw how
+                            many women in food were doing everything — cooking, managing, hiring, financing — but
+                            without the guidance or systems to scale.
                         </p>
                     </div>
-                    <div>
+                   <div style="border:2px solid #00357a;padding:20px;border-radius:20px 0;">
                         <h3 class="text-2xl font-semibold text-gray-800 mb-4">The Tech Disconnect</h3>
                         <p class="text-gray-700 mb-4 text-justify">
-                            At the same time, Aaditi Sinha — a seasoned product leader and tech entrepreneur — kept asking the same question: why does F&B tech feel so broken? POS systems were clunky, customer data was fragmented, and platforms were built without the operator in
+                            At the same time, Aaditi Sinha — a seasoned product leader and tech entrepreneur — kept
+                            asking the same question: why does F&B tech feel so broken? POS systems were clunky,
+                            customer data was fragmented, and platforms were built without the operator in
                             mind — especially not women founders.
                         </p>
                     </div>
                 </div>
                 <p class="text-center text-xl text-gray-800 mt-10 text-justify">
-                    Together, they saw the same problem: women in food were creating brilliance, but without the infrastructure to grow. HerTable Ventures is here to empower women in the food space with the tools, mindset, and support to build resilient, profitable businesses
+                    Together, they saw the same problem: women in food were creating brilliance, but without the
+                    infrastructure to grow. HerTable Ventures is here to empower women in the food space with the tools,
+                    mindset, and support to build resilient, profitable businesses
                     — without losing their passion in the process.
                 </p>
             </div>
         </section>
 
-        <section id="pricing" class="py-16 px-4 " style="background-color: #545454;">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h2 class="text-4xl font-bold text-white mb-8">Fair, Founder-Friendly Pricing</h2>
-                <p class="text-lg text-white mb-6 text-justify">
-                    We understand that every food business is at a different stage — and every rupee counts. That's why our pricing is dynamic and designed to meet you where you are.
-                </p>
-                <p class="text-lg text-white mb-6 text-justify">
-                    Whether you're a small café just getting started or an established food brand looking to scale, our pricing adjusts based on your business size, revenue stage, and operational health.
-                </p>
-                <p class="text-lg text-white text-justify">
-                    No cookie-cutter retainers — just fair, transparent investment in growth that's actually comfortable for you.
-                </p>
-                <br>
-
-            </div>
-        </section>
-
-
-
-        <section id="about" class="py-16 px-4 bg-white">
+        <section id="about_arpita" class="py-16 px-4 bg-white" style=" background-color: #00357a;">
             <div class="container mx-auto max-w-5xl">
 
-                <div class="mb-12 md:flex items-start md:space-x-8">
+                <div class="mb-12 md:flex items-start md:space-x-8" style="">
                     <div class="md:w-1/3">
-                        <h3 class="text-3xl font-semibold text-gray-900 mb-2">Arpita Ganesh</h3>
-                        <p class="text-lg text-gray-700 mb-4">Founder | Business Strategist | Profitability Partner | F&B Transformation Strategist | Multi-time Entrepreneur | Digitization Expert</p>
-                        <a href="https://www.linkedin.com/in/arpita-ganesh/" target="_blank" class="text-blue-600 hover:underline">
-                            <span class="[&>svg]:h-5 [&>svg]:w-5">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" style="height:20px;">
-    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /> </svg>
-</span>
-</a>
+                        <h3 class="text-3xl font-semibold  mb-2" style="color:#ffde59;">Arpita Ganesh</h3>
+                        <p class="text-lg text-white mb-4 text-justify">Founder | Business Strategist | Profitability Partner |
+                            F&B Transformation Strategist | Multi-time Entrepreneur | Digitization Expert</p>
+                        <a href="https://www.linkedin.com/in/arpita-ganesh/" target="_blank"
+                            class="text-blue-600 hover:underline">
+                            <span class="[&>svg]:h-5 [&>svg]:w-5" style="color:#ffde59;">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"
+                                    style="height:20px;">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                                </svg>
+                            </span>
+                        </a>
                     </div>
-                    <div class="md:w-2/3 text-gray-700">
-                        <p class="mb-4">AG is a multi-time entrepreneur and transformation specialist with over <span class="font-semibold">30 years of cross-industry experience</span>, and a deep-rooted passion for building <span class="font-semibold">smart, sustainable, and scalable consumer businesses</span>                            — especially in the Food & Beverage space.</p>
-                        <p class="mb-4">A graduate in <span class="font-semibold">Hotel Management</span>, AG began her journey on the frontlines of hospitality, understanding firsthand how operations, guest experience, and margins intersect in the real world.</p>
-                        <p class="mb-4">Over the years, she has worked across <span class="font-semibold">multiple verticals</span> — from food tech and retail to service brands — always focusing on solving operational inefficiencies and unlocking profitability.</p>
-                        <p class="mb-4">She has founded, built, and scaled her own <span class="font-semibold">D2C brand to national success</span>, giving her an insider's perspective on what it really takes to grow a business from the ground up — product by product,
+                    <div class="md:w-2/3 text-white text-justify">
+                        <p class="mb-4">AG is a multi-time entrepreneur and transformation specialist with over <span
+                                class="font-semibold">30 years of cross-industry experience</span>, and a deep-rooted
+                            passion for building <span class="font-semibold">smart, sustainable, and scalable consumer
+                                businesses</span> — especially in the Food & Beverage space.</p>
+                        <p class="mb-4">A graduate in <span class="font-semibold">Hotel Management</span>, AG began her
+                            journey on the frontlines of hospitality, understanding firsthand how operations, guest
+                            experience, and margins intersect in the real world.</p>
+                        <p class="mb-4">Over the years, she has worked across <span class="font-semibold">multiple
+                                verticals</span> — from food tech and retail to service brands — always focusing on
+                            solving operational inefficiencies and unlocking profitability.</p>
+                        <p class="mb-4">She has founded, built, and scaled her own <span class="font-semibold">D2C brand
+                                to national success</span>, giving her an insider's perspective on what it really takes
+                            to grow a business from the ground up — product by product,
                             customer by customer, system by system.</p>
-                        <p class="mb-4">As she began mentoring and consulting for food entrepreneurs across India, a pattern emerged: Women were doing everything — from cooking and marketing to hiring, negotiating, and running daily ops — yet were operating without structure,
+                        <p class="mb-4">As she began mentoring and consulting for food entrepreneurs across India, a
+                            pattern emerged: Women were doing everything — from cooking and marketing to hiring,
+                            negotiating, and running daily ops — yet were operating without structure,
                             strategic clarity, or systems that could help them truly scale.</p>
-                        <p class="mb-4">That's where Her Table Ventures was born. AG launched <span class="font-semibold">Her Table Ventures</span> as India's <span class="font-semibold">first venture studio dedicated to women-led F&B businesses</span>. Her mission?
-                            To help women in food <span class="font-semibold">grow smart, scale profitably, and lead boldly</span> — with the kind of real-world support usually reserved for VC-backed startups.</p>
+                        <p class="mb-4">That's where Her Table Ventures was born. AG launched <span
+                                class="font-semibold">Her Table Ventures</span> as India's <span
+                                class="font-semibold">first venture studio dedicated to women-led F&B businesses</span>.
+                            Her mission?
+                            To help women in food <span class="font-semibold">grow smart, scale profitably, and lead
+                                boldly</span> — with the kind of real-world support usually reserved for VC-backed
+                            startups.</p>
                         <p class="font-semibold mb-2">Her unique approach combines:</p>
                         <ul class="list-disc list-inside mb-4">
                             <li>Business logic with grounded empathy</li>
@@ -144,35 +174,60 @@
                             <li>Hands-on support with long-term planning</li>
                             <li>Deep understanding of tech and digitization</li>
                         </ul>
-                        <p class="mb-4">Through Her Table Ventures, AG continues to partner with founders of cafés, restaurants, cloud kitchens, bakeries, bars, and packaged food brands to <span class="font-semibold">turn chaos into clarity, hustle into systems, and potential into real, repeatable profit.</span></p>
-                        <p class="font-semibold">She's not here to preach. She's here to <span class="italic">partner</span>.</p>
+                        <p class="mb-4">Through Her Table Ventures, AG continues to partner with founders of cafés,
+                            restaurants, cloud kitchens, bakeries, bars, and packaged food brands to <span
+                                class="font-semibold">turn chaos into clarity, hustle into systems, and potential into
+                                real, repeatable profit.</span></p>
+                        <p class="font-semibold">She's not here to preach. She's here to <span
+                                class="italic">partner</span>.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+         <section id="about_aaditi" class="py-16 px-4 bg-white" style=" background-color: #ffde59;">
+            <div class="container mx-auto max-w-5xl">
 
+            
                 <div class="md:flex items-start md:space-x-8 mt-12">
                     <div class="md:w-1/3">
-                        <h3 class="text-3xl font-semibold text-gray-900 mb-2">Aaditi Sinha</h3>
-                        <p class="text-lg text-gray-700 mb-4">Product Leader | Tech Strategist | SaaS Expert | F&B Digitization Architect | Startup Builder | Customer Journey Designer | Data & UX Advocate</p>
-                        <a href="https://www.linkedin.com/in/aaditis/" target="_blank" class="text-blue-600 hover:underline"> <span class="[&>svg]:h-5 [&>svg]:w-5">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" style="height:20px;">
-    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /> </svg>
-</span>
-</a>
+                        <h3 class="text-3xl font-semibold mb-2"  style="color:#00357a;">Aaditi Sinha</h3>
+                        <p class="text-lg text-gray-700 mb-4 text-justify">Product Leader | Tech Strategist | SaaS Expert | F&B
+                            Digitization Architect | Startup Builder | Customer Journey Designer | Data & UX Advocate
+                        </p>
+                        <a href="https://www.linkedin.com/in/aaditis/" target="_blank"
+                            class="text-blue-600 hover:underline"> <span class="[&>svg]:h-5 [&>svg]:w-5"  style="color:#00357a;">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"
+                                    style="height:20px;">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                                </svg>
+                            </span>
+                        </a>
                     </div>
-                    <div class="md:w-2/3 text-gray-700">
-                        <p class="mb-4">Aaditi Sinha is a seasoned product leader, technologist, and startup builder with a deep passion for creating user-centric, scalable tech solutions.</p>
-                        <p class="mb-4">With over a decade of experience spanning product development, growth strategy, and customer experience, Aaditi brings a rare blend of technical rigor and human insight to Her Table Ventures.</p>
-                        <p class="mb-4">Before joining Her Table, Aaditi co-founded <span class="font-semibold">Locale.ai</span>, a SaaS startup that helped companies leverage geospatial data for business intelligence.</p>
-                        <p class="mb-4">As Tech Partner at Her Table Ventures, Aaditi leads the development of our proprietary F&B technology stack — from customer journey tools and point-of-sale systems to inventory, vendor, and employee management solutions. Each product
-                            is designed with the unique needs of food entrepreneurs in mind — intuitive, powerful, and built for real-world use.</p>
+                    <div class="md:w-2/3 text-gray-700 text-justify">
+                        <p class="mb-4">Aaditi Sinha is a seasoned product leader, technologist, and startup builder
+                            with a deep passion for creating user-centric, scalable tech solutions.</p>
+                        <p class="mb-4">With over a decade of experience spanning product development, growth strategy,
+                            and customer experience, Aaditi brings a rare blend of technical rigor and human insight to
+                            Her Table Ventures.</p>
+                        <p class="mb-4">Before joining Her Table, Aaditi co-founded <span
+                                class="font-semibold">Locale.ai</span>, a SaaS startup that helped companies leverage
+                            geospatial data for business intelligence.</p>
+                        <p class="mb-4">As Tech Partner at Her Table Ventures, Aaditi leads the development of our
+                            proprietary F&B technology stack — from customer journey tools and point-of-sale systems to
+                            inventory, vendor, and employee management solutions. Each product
+                            is designed with the unique needs of food entrepreneurs in mind — intuitive, powerful, and
+                            built for real-world use.</p>
                         <p class="font-semibold mb-2">Aaditi's strengths lie in:</p>
                         <ul class="list-disc list-inside mb-4">
                             <li>Turning complex operational problems into elegant tech solutions</li>
                             <li>Deep product-market alignment through data and design thinking</li>
                             <li>Building agile, scalable platforms that grow with the business</li>
                         </ul>
-                        <p class="mb-4">Her ability to bridge the gap between kitchen floors and code makes her an invaluable part of our mission to digitize and future-proof women-led food businesses.</p>
-                        <p class="font-semibold">She's <span class="italic">not just building tech</span>. She's building what makes your business <span class="italic">work smarter</span>.</p>
+                        <p class="mb-4">Her ability to bridge the gap between kitchen floors and code makes her an
+                            invaluable part of our mission to digitize and future-proof women-led food businesses.</p>
+                        <p class="font-semibold">She's <span class="italic">not just building tech</span>. She's
+                            building what makes your business <span class="italic">work smarter</span>.</p>
                     </div>
                 </div>
             </div>
@@ -192,8 +247,10 @@
             <div class="mb-6 text-center">
                 <div class="inline-block"> Made with </div>
                 <div class="inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" style="height:30px;margin-bottom:-5px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="red" style="height:30px;margin-bottom:-5px;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                     </svg>
                 </div>
                 <div class="inline-block">in Bengaluru</div>
@@ -201,9 +258,15 @@
 
             <p class="text-gray-400 mb-4">&copy; 2025 HerTable Ventures. All rights reserved.</p>
             <div class="text-gray-400 text-sm">
-                <p>Women in F&B | Food business consulting | Restaurant strategy | Café operations support | F&B profitability expert | Restaurant tech solutions | F&B venture studio | Women entrepreneurs India | Food startup consulting | Kitchen operations
-                    help | F&B business growth | Menu costing expert | Restaurant digitization | POS for restaurants | Inventory management | F&B Vendor management solutions | Hospitality tech partner | Staff training F&B | F&B funding support | Food
-                    brand strategy | D2C food consulting | Business plan for restaurants | Investor readiness F&B | Restaurant branding agency | Hospitality operations expert | F&B software for women | F&B team productivity | Food entrepreneur support
+                <p>Women in F&B | Food business consulting | Restaurant strategy | Café operations support | F&B
+                    profitability expert | Restaurant tech solutions | F&B venture studio | Women entrepreneurs India |
+                    Food startup consulting | Kitchen operations
+                    help | F&B business growth | Menu costing expert | Restaurant digitization | POS for restaurants |
+                    Inventory management | F&B Vendor management solutions | Hospitality tech partner | Staff training
+                    F&B | F&B funding support | Food
+                    brand strategy | D2C food consulting | Business plan for restaurants | Investor readiness F&B |
+                    Restaurant branding agency | Hospitality operations expert | F&B software for women | F&B team
+                    productivity | Food entrepreneur support
                     | Women-led food startups | Restaurant consulting India</p>
             </div>
         </div>
@@ -213,52 +276,52 @@
 
     <script>
         // JavaScript for smooth scrolling and showing/hiding detailed service sections
-   
+
         document.addEventListener("DOMContentLoaded", () => {
-  // Select all dropdown toggle buttons
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
+            // Select all dropdown toggle buttons
+            const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
 
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", () => {
-      // Find the next sibling element which is the dropdown menu
-      const dropdownMenu = toggle.nextElementSibling
+            dropdownToggles.forEach((toggle) => {
+                toggle.addEventListener("click", () => {
+                    // Find the next sibling element which is the dropdown menu
+                    const dropdownMenu = toggle.nextElementSibling
 
-      // Toggle the 'hidden' class to show or hide the dropdown menu
-      if (dropdownMenu.classList.contains("hidden")) {
-        // Hide any open dropdown menus before showing the new one
-        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-          menu.classList.add("hidden")
+                    // Toggle the 'hidden' class to show or hide the dropdown menu
+                    if (dropdownMenu.classList.contains("hidden")) {
+                        // Hide any open dropdown menus before showing the new one
+                        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                            menu.classList.add("hidden")
+                        })
+
+                        dropdownMenu.classList.remove("hidden")
+                    } else {
+                        dropdownMenu.classList.add("hidden")
+                    }
+                })
+            })
+
+            // Clicking outside of an open dropdown menu closes it
+            window.addEventListener("click", function (e) {
+                if (!e.target.matches(".dropdown-toggle")) {
+                    document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                        if (!menu.contains(e.target)) {
+                            menu.classList.add("hidden")
+                        }
+                    })
+                }
+            })
+
+            // Mobile menu toggle
+
+            const mobileMenuButton = document.querySelector('.mobile-menu-button')
+            const mobileMenu = document.querySelector('.navigation-menu')
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden')
+            })
+
+
         })
-
-        dropdownMenu.classList.remove("hidden")
-      } else {
-        dropdownMenu.classList.add("hidden")
-      }
-    })
-  })
-
-  // Clicking outside of an open dropdown menu closes it
-  window.addEventListener("click", function (e) {
-    if (!e.target.matches(".dropdown-toggle")) {
-      document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-        if (!menu.contains(e.target)) {
-          menu.classList.add("hidden")
-        }
-      })
-    }
-  })
-  
-  // Mobile menu toggle
-  
-  const mobileMenuButton = document.querySelector('.mobile-menu-button')
-  const mobileMenu = document.querySelector('.navigation-menu')
-  
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden')
-  })
-  
-  
-})
     </script>
 
 </body>

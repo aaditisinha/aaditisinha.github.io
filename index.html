@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerTable Ventures</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <style>
-        @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
-        body {
-           font-family: "Nunito", sans-serif;
+        @font-face {
+            font-family: 'Giaza';
+            src: url('Giaza.otf');
         }
-        h1, h2, h3, h4, h5, h6 {
-              font-family: 'Giaza', serif; /* For headings */
+
+        body {
+            font-family: "Nunito", sans-serif;
+        }
+
+        h1,h2,h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Giaza', serif;
+            /* For headings */
+        }
+        .rounded-full{
+             border-radius: 20px 0px 20px 0px;
+             text-transform:uppercase;
+             font-weight: 700;
         }
     </style>
 </head>
@@ -28,26 +43,35 @@
                     <!-- mobile menu icon -->
                     <div class="md:hidden flex items-center">
                         <button type="button" class="mobile-menu-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                             </svg>
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
+                <div
+                    class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
                     <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
                     <!-- Dropdown menu -->
                     <div class="relative">
-                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
+                        <button type="button"
+                            class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
                             <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
                         </button>
                         <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
-                            <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
-                            <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
-                            <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
-                            <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
-                            <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
+                            <a href="services.html#strategy-engagement"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
+                            <a href="services.html#brand-building"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
+                            <a href="services.html#hands-on-consulting"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
+                            <a href="services.html#digitization"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
+                            <a href="services.html#fundraising-support"
+                                class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
                         </div>
                     </div>
                     <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
@@ -57,19 +81,20 @@
                 </div>
             </div>
         </nav>
-</header>
-
-
-
+    </header>
     <main>
         <section id="home" class=" py-20 px-4 text-center" style="background-color: #ffde59;">
             <div class="container mx-auto max-w-4xl">
-                <h1 class="text-5xl font-bold  leading-tight mb-6" style="color: #00357a;">Fueling the  <span style="font-size:1.1em;">Rise of Women in F&B</span></h1>
+                <h1 class="text-5xl font-bold  leading-tight mb-6" style="color: #00357a;">Fueling the <span
+                        style="font-size:1.1em;">Rise of Women in F&B</span></h1>
                 <p class="text-lg text-slate-700 mb-8">
-                    Women-led food and beverage (F&B) businesses across the globe are brimming with creativity, passion, and resilience — yet too many hit a wall when it comes to funding, strategic clarity, and operational efficiency.
+                    Women-led food and beverage (F&B) businesses across the globe are brimming with creativity, passion,
+                    and resilience — yet too many hit a wall when it comes to funding, strategic clarity, and
+                    operational efficiency.
                 </p>
                 <br>
-                <a href="contact-us.html" class="px-6 py-2 rounded-full text-lg hover:bg-blue-700 transition duration-300" style="background-color: #545454;color:white;">Let's talk.</a>
+                <a href="contact-us.html"  class="px-6 py-2 rounded-full text-lg hover:bg-blue-700 transition duration-300"
+                    style="background-color: #545454;color:white;">Let's talk.</a>
             </div>
         </section>
 
@@ -77,11 +102,14 @@
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="text-4xl font-bold text-white mb-8">More Than a Venture Studio</h2>
                 <p class="text-lg text-white mb-6 text-justify">
-                    HerTable Ventures is more than a venture studio. It's a dedicated ecosystem designed to support, scale, and celebrate women entrepreneurs in F&B. Whether you're opening your first café, rethinking your restaurant's profitability, or digitizing a fast-growing
+                    HerTable Ventures is more than a venture studio. It's a dedicated ecosystem designed to support,
+                    scale, and celebrate women entrepreneurs in F&B. Whether you're opening your first café, rethinking
+                    your restaurant's profitability, or digitizing a fast-growing
                     food brand, we bring the strategy, tech, and real-world expertise to get you there.
                 </p>
                 <p class="text-lg text-white text-justify">
-                    We work with women founders who are ready to stop winging it — and start building sustainable businesses with confidence, clarity, and systems that work.
+                    We work with women founders who are ready to stop winging it — and start building sustainable
+                    businesses with confidence, clarity, and systems that work.
                 </p>
             </div>
         </section>
@@ -90,17 +118,17 @@
             <div class="container mx-auto max-w-4xl text-center text-slate-700">
                 <h2 class="text-4xl font-bold text-slate-700 mb-8">Fair, Founder-Friendly Pricing</h2>
                 <p class="text-lg text-slate-700 mb-6 text-justify">
-                    We understand that every food business is at a different stage — and every rupee counts. That's why our pricing is dynamic and designed to meet you where you are.
+                    We understand that every food business is at a different stage — and every rupee counts. That's why
+                    our pricing is dynamic and designed to meet you where you are.
                 </p>
                 <p class="text-lg text-slate-700 mb-6 text-justify">
-                    Whether you're a small café just getting started or an established food brand looking to scale, our pricing adjusts based on your business size, revenue stage, and operational health.
+                    Whether you're a small café just getting started or an established food brand looking to scale, our
+                    pricing adjusts based on your business size, revenue stage, and operational health.
                 </p>
                 <p class="text-lgtext-slate-700 text-justify">
-                    No cookie-cutter retainers — just fair, transparent investment in growth that's actually comfortable for you.
+                    No cookie-cutter retainers — just fair, transparent investment in growth that's actually comfortable
+                    for you.
                 </p>
-
-
-
             </div>
         </section>
 
@@ -108,13 +136,17 @@
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="text-4xl font-bold text-gray-900 mb-8">We are a great fit if you:</h2>
                 <ul class="list-disc list-inside text-lg text-gray-700 space-y-3 text-justify">
-                    <li>Run an existing business and are struggling with profitability, growth, or scaling decisions</li>
+                    <li>Run an existing business and are struggling with profitability, growth, or scaling decisions
+                    </li>
                     <li>Want to start a café, restaurant, bakery, food brand, or F&B concept</li>
                     <li>Are ready for strategic, hands-on support that goes beyond surface-level advice</li>
                 </ul>
                 <div class="mt-10">
-                    <p class="text-lg text-gray-900 mb-6 text-center font-bold"> Ready to grow your women-led food business?</p>
-                    <a href="contact-us.html" class="text-slate-700 font-bold px-6 py-2  rounded-full text-lg hover:bg-blue-700 transition duration-300" style="background-color: #ffde59;">Call us now!</a>
+                    <p class="text-lg text-gray-900 mb-6 text-center font-bold"> Ready to grow your women-led food
+                        business?</p>
+                    <a href="contact-us.html"
+                        class="text-slate-700 font-bold px-6 py-2  rounded-full text-lg hover:bg-blue-700 transition duration-300"
+                        style="background-color: #ffde59;">Call us now!</a>
                 </div>
             </div>
         </section>
@@ -123,86 +155,104 @@
             <div class="container mx-auto max-w-5xl">
                 <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Our Services</h2>
                 <p class="text-lg text-gray-700 text-center mb-10 text-justify max-w-4xl mx-auto">
-                    At HerTable Ventures, we specialize in helping women in F&B scale smarter and grow sustainably. Whether you run a café, bar, restaurant, bakery, or homegrown food brand, we offer hands-on, end-to-end support — tailored to the food industry.
+                    At HerTable Ventures, we specialize in helping women in F&B scale smarter and grow sustainably.
+                    Whether you run a café, bar, restaurant, bakery, or homegrown food brand, we offer hands-on,
+                    end-to-end support — tailored to the food industry.
                 </p>
-                
+
                 <!-- First row with 3 cards -->
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full" style="background-color: #ffde59;">
                         <h3 class="text-2xl font-semibold text-gray-800 mb-3">Strategy Engagement</h3>
-                        <p class="text-gray-700 mb-4 text-justify flex-grow">A 360° deep dive into your food business — uncovering challenges, identifying opportunities, and creating a clear path forward.</p>
+                        <p class="text-gray-700 mb-4 text-justify flex-grow">A 360° deep dive into your food business —
+                            uncovering challenges, identifying opportunities, and creating a clear path forward.</p>
                         <ul class="list-disc list-inside text-gray-600 mb-4 text-left">
                             <li>Business Health Analysis</li>
                             <li>Focused Problem Solving</li>
                             <li>Business Reinvention</li>
                         </ul>
                         <div class="mt-auto">
-                            <a href="services.html#strategy-engagement" style="background-color: #545454;" class="text-white px-6 py-2 rounded-full text-lg transition duration-300 inline-block">Learn More</a>
+                            <a href="services.html#strategy-engagement" style="background-color: #00357a;" class="text-white px-3 py-2 rounded-full text-sm transition inline-block">Learn More</a>
                         </div>
                     </div>
 
-                    <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full" style="background-color: #00357a;">
+                    <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full"
+                        style="background-color: #00357a;">
                         <h3 class="text-2xl font-semibold text-white mb-3">Brand Building</h3>
-                        <p class="text-white mb-4 text-justify flex-grow">We help you define what makes your brand unforgettable — and ensure it shows up at every touchpoint.</p>
+                        <p class="text-white mb-4 text-justify flex-grow">We help you define what makes your brand
+                            unforgettable — and ensure it shows up at every touchpoint.</p>
                         <ul class="list-disc list-inside text-white mb-4 text-left">
                             <li>Brand Discovery Workshops</li>
                             <li>USP & Narrative Definition</li>
                             <li>In-Market Positioning Strategy</li>
                         </ul>
                         <div class="mt-auto">
-                            <a href="services.html#brand-building" style="background-color: #ffde59;" class="px-6 py-2 rounded-full text-lg transition duration-300 inline-block">Learn More</a>
+                            <a href="services.html#brand-building" style="background-color: #ffde59;"
+                                class="px-3 py-2 rounded-full text-sm transition inline-block">Learn
+                                More</a>
                         </div>
                     </div>
-                       <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full" style="background-color: #3ddbe1;">
-                            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Digitization</h3>
-                            <p class="text-gray-700 mb-4 text-justify flex-grow">It's time to streamline chaos and unlock growth with our proprietary F&B software.</p>
-                            <ul class="list-disc list-inside text-gray-600 mb-4 text-left">
-                                <li>POS & Customer Journey Tools</li>
-                                <li>Inventory, Stock & Procurement Management</li>
-                                <li>Real-Time Reports & Analytics</li>
-                            </ul>
-                            <div class="mt-auto">
-                                <a href="services.html#digitization" style="background-color: #00357a;" class="px-6 py-2 text-white rounded-full text-lg transition duration-300 inline-block">Learn More</a>
-                            </div>
+                    <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full"
+                        style="background-color: #ffde59;">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Digitization</h3>
+                        <p class="text-gray-700 mb-4 text-justify flex-grow">It's time to streamline chaos and unlock
+                            growth with our proprietary F&B software.</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 text-left">
+                            <li>POS & Customer Journey Tools</li>
+                            <li>Inventory, Stock & Procurement Management</li>
+                            <li>Real-Time Reports & Analytics</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="services.html#digitization" style="background-color: #00357a;"
+                                class=" px-3 py-2 rounded-full text-sm transition inline-block text-white">Learn
+                                More</a>
                         </div>
-
-                  
+                    </div>
                 </div>
 
                 <!-- Second row with 2 cards centered -->
                 <div class="flex justify-center">
                     <div class="grid md:grid-cols-2 gap-8 max-w-2xl w-full">
-                       <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full" style="background-color: #99e17a;">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Hands-On Consulting</h3>
-                        <p class="text-gray-700 mb-4 text-justify flex-grow">We become an extension of your team — working on-site, every day, for 3 months to identify gaps, fix inefficiencies, and unlock real, lasting profitability.</p>
-                        <ul class="list-disc list-inside text-gray-600 mb-4 text-left">
-                            <li>Daily Operational Diagnostics</li>
-                            <li>Cost Control & Leakage Fixes</li>
-                            <li>Staff Training & SOP Implementation</li>
-                        </ul>
-                        <div class="mt-auto">
-                            <a href="services.html#hands-on-consulting" style="background-color: #fff;" class="px-6 py-2 rounded-full text-lg transition duration-300 inline-block">Learn More</a>
+                        <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full"
+                            style="background-color: #00357a;">
+                            <h3 class="text-2xl font-semibold text-white mb-3">Hands-On Consulting</h3>
+                            <p class="text-white mb-4 text-justify flex-grow">We become an extension of your team —
+                                working on-site, every day, for 3 months to identify gaps, fix inefficiencies, and
+                                unlock real, lasting profitability.</p>
+                            <ul class="list-disc list-inside text-white mb-4 text-left">
+                                <li>Daily Operational Diagnostics</li>
+                                <li>Cost Control & Leakage Fixes</li>
+                                <li>Staff Training & SOP Implementation</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="services.html#hands-on-consulting" style="background-color: #ffde59;"
+                                    class=" px-3 py-2 rounded-full text-sm transition inline-block">Learn
+                                    More</a>
+                            </div>
                         </div>
-                    </div>
 
-                        <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full" style="background-color: #fff;">
+                        <div class="flex flex-col p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center h-full"
+                            style="background-color: #ffde59;">
                             <h3 class="text-2xl font-semibold text-gray-800 mb-3">Fundraising Support</h3>
                             <h5 class="text-xl font-semibold  mb-3" style="color:#cc0000;">(coming soon)</h5>
-                            <p class="text-gray-700 mb-4 text-justify flex-grow">We offer fundraising support only at our discretion, for businesses that meet specific operational and financial benchmarks.</p>
+                            <p class="text-gray-700 mb-4 text-justify flex-grow">We offer fundraising support only at
+                                our discretion, for businesses that meet specific operational and financial benchmarks.
+                            </p>
                             <ul class="list-disc list-inside text-gray-600 mb-4 text-left">
                                 <li>Financial Health Check</li>
                                 <li>Business Plan & Investor Deck Creation</li>
                                 <li>Access to Angel Investors, Lenders & Platforms</li>
                             </ul>
                             <div class="mt-auto">
-                                <a href="services.html#fundraising-support" style="background-color: #3ddbe1;" class="px-6 py-2 rounded-full text-lg text-slate-700 transition duration-300 inline-block">Learn More</a>
+                                <a href="services.html#fundraising-support" style="background-color: #00357a;"
+                                    class="text-white px-3 py-2 rounded-full text-sm transition inline-block">Learn
+                                    More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-gray-800 text-white py-10 px-4">
@@ -217,72 +267,81 @@
                 <a href="terms-of-use.html" class="text-gray-300 hover:text-white mr-4">Terms of Use</a>
             </div>
             <div class="mb-6 text-center">
-              <div class="inline-block"> Made with </div> 
-            <div class="inline-block"> <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="red"  style="height:30px;margin-bottom:-5px;">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-</svg> </div>  <div class="inline-block">in Bengaluru</div>
-</div>
+                <div class="inline-block"> Made with </div>
+                <div class="inline-block"> <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="red" style="height:30px;margin-bottom:-5px;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg> </div>
+                <div class="inline-block">in Bengaluru</div>
+            </div>
 
 
             <p class="text-gray-400 mb-4">&copy; 2025 HerTable Ventures. All rights reserved.</p>
             <div class="text-gray-400 text-sm">
-                <p>Women in F&B | Food business consulting | Restaurant strategy | Café operations support | F&B profitability expert | Restaurant tech solutions | F&B venture studio | Women entrepreneurs India | Food startup consulting | Kitchen operations
-                    help | F&B business growth | Menu costing expert | Restaurant digitization | POS for restaurants | Inventory management | F&B Vendor management solutions | Hospitality tech partner | Staff training F&B | F&B funding support | Food
-                    brand strategy | D2C food consulting | Business plan for restaurants | Investor readiness F&B | Restaurant branding agency | Hospitality operations expert | F&B software for women | F&B team productivity | Food entrepreneur support
+                <p>Women in F&B | Food business consulting | Restaurant strategy | Café operations support | F&B
+                    profitability expert | Restaurant tech solutions | F&B venture studio | Women entrepreneurs India |
+                    Food startup consulting | Kitchen operations
+                    help | F&B business growth | Menu costing expert | Restaurant digitization | POS for restaurants |
+                    Inventory management | F&B Vendor management solutions | Hospitality tech partner | Staff training
+                    F&B | F&B funding support | Food
+                    brand strategy | D2C food consulting | Business plan for restaurants | Investor readiness F&B |
+                    Restaurant branding agency | Hospitality operations expert | F&B software for women | F&B team
+                    productivity | Food entrepreneur support
                     | Women-led food startups | Restaurant consulting India</p>
             </div>
         </div>
     </footer>
 
 
-        <script>
+    <script>
         // JavaScript for smooth scrolling and showing/hiding detailed service sections
-   
+
         document.addEventListener("DOMContentLoaded", () => {
-  // Select all dropdown toggle buttons
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
+            // Select all dropdown toggle buttons
+            const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
 
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", () => {
-      // Find the next sibling element which is the dropdown menu
-      const dropdownMenu = toggle.nextElementSibling
+            dropdownToggles.forEach((toggle) => {
+                toggle.addEventListener("click", () => {
+                    // Find the next sibling element which is the dropdown menu
+                    const dropdownMenu = toggle.nextElementSibling
 
-      // Toggle the 'hidden' class to show or hide the dropdown menu
-      if (dropdownMenu.classList.contains("hidden")) {
-        // Hide any open dropdown menus before showing the new one
-        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-          menu.classList.add("hidden")
+                    // Toggle the 'hidden' class to show or hide the dropdown menu
+                    if (dropdownMenu.classList.contains("hidden")) {
+                        // Hide any open dropdown menus before showing the new one
+                        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                            menu.classList.add("hidden")
+                        })
+
+                        dropdownMenu.classList.remove("hidden")
+                    } else {
+                        dropdownMenu.classList.add("hidden")
+                    }
+                })
+            })
+
+            // Clicking outside of an open dropdown menu closes it
+            window.addEventListener("click", function (e) {
+                if (!e.target.matches(".dropdown-toggle")) {
+                    document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                        if (!menu.contains(e.target)) {
+                            menu.classList.add("hidden")
+                        }
+                    })
+                }
+            })
+
+            // Mobile menu toggle
+
+            const mobileMenuButton = document.querySelector('.mobile-menu-button')
+            const mobileMenu = document.querySelector('.navigation-menu')
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden')
+            })
+
+
         })
-
-        dropdownMenu.classList.remove("hidden")
-      } else {
-        dropdownMenu.classList.add("hidden")
-      }
-    })
-  })
-
-  // Clicking outside of an open dropdown menu closes it
-  window.addEventListener("click", function (e) {
-    if (!e.target.matches(".dropdown-toggle")) {
-      document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-        if (!menu.contains(e.target)) {
-          menu.classList.add("hidden")
-        }
-      })
-    }
-  })
-  
-  // Mobile menu toggle
-  
-  const mobileMenuButton = document.querySelector('.mobile-menu-button')
-  const mobileMenu = document.querySelector('.navigation-menu')
-  
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden')
-  })
-  
-  
-})
     </script>
 </body>
 
