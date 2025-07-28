@@ -11,60 +11,61 @@
     <meta property="og:url" content="https://hertableventures.com/terms-of-use.html"/>
     <meta property="og:description" content="Fueling the Rise of Women in F&B"/>
     <meta property="og:image" content="https:/hertableventures.com/HerTable.png"/>
-    <style>
-      @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
-      body {font-family: "Nunito", sans-serif;}
-      h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
-      .rounded-full{border-radius: 20px 0 20px 0;}
-
+     <style>
+        @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
+          body {font-family: "Nunito", sans-serif;}
+          h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
+          .rounded-full{border-radius: 20px 0 20px 0;text-transform: uppercase;font-weight: 700;}
+          a.menu-item:hover{ background-color: #ffde59;}
     </style>
-  </head>
-  <body class="text-gray-800">
-    <header class="bg-white py-4 shadow-sm sticky top-0 z-50">
-      <nav class="bg-white">
-        <div class="container mx-auto px-4 md:flex items-center gap-6">
-          <!-- Logo -->
-          <div class="flex items-center justify-between md:w-auto w-full">
-            <a href="index.html">
-              <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3">
-            </a>
-            <!-- mobile menu icon -->
-            <div class="md:hidden flex items-center">
-              <button type="button" class="mobile-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                </svg>
-              </button>
+</head>
+
+<body class="text-gray-800">
+    <header class="bg-white py-2 shadow-sm sticky top-0 z-50 " style="border-bottom:1px solid #DbDbDb;">
+        <nav class="">
+            <div class="container mx-auto px-4 md:flex items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="index.html">
+                        <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3">
+                    </a>
+                    <!-- mobile menu icon -->
+                    <div class="md:hidden flex items-center">
+                        <button type="button" class="mobile-menu-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
+                    <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
+                    <!-- Dropdown menu -->
+                    <div class="relative">
+                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
+                            <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
+                            <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Strategy Engagement</a>
+                            <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Brand Building</a>
+                            <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Hands on Consulting</a>
+                            <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Digitization</a>
+                            <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Fundraising Support</a>
+                        </div>
+                    </div>
+                    <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
+                    <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
+                    <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
+                </div>
             </div>
-          </div>
-          <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
-            <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
-            <!-- Dropdown menu -->
-            <div class="relative">
-              <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
-                <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
-              </button>
-              <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
-                <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
-                <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
-                <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
-                <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
-                <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
-              </div>
-            </div>
-            <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
-            <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
-            <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
-      <section id="home" class=" py-20 px-4 text-center" style="background-color: #00357a;">
+        <section id="home" class="hero-background py-20 px-4 text-center" style="background-color: #545454;">
         <div class="container mx-auto max-w-4xl">
-          <h1 class="text-5xl font-bold text-white leading-tight mb-6">Fueling the Rise of Women in F&B</h1>
-          <p class="text-lg text-white mb-8"> Women-led food and beverage (F&B) businesses across the globe are brimming with creativity, passion, and resilience — yet too many hit a wall when it comes to funding, strategic clarity, and operational efficiency. </p>
-          <a href="contact-us.html" class="text-slate-700 px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition duration-300" style="background-color: #ffde59;">Let’s talk.</a>
+          <h1 class="text-5xl font-bold leading-tight text-white">
+            <img src="images/logo.png" class="inline-block" style="max-width: 80px;margin-top:-10px;">Terms of use
+            </h1>
         </div>
       </section>
       <section id="terms-of-use" class="py-16 px-4 " style="">

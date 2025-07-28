@@ -12,57 +12,59 @@
     <meta property="og:description" content="Fueling the Rise of Women in F&B"/>
     <meta property="og:image" content="https:/hertableventures.com/HerTable.png"/>
     <style>
-      @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
-      body {font-family: "Nunito", sans-serif;}
-      h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
-      .rounded-full{border-radius: 20px 0 20px 0;}
-
+        @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
+          body {font-family: "Nunito", sans-serif;}
+          h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
+          .rounded-full{border-radius: 20px 0 20px 0;text-transform: uppercase;font-weight: 700;}
+          a.menu-item:hover{ background-color: #ffde59;}
     </style>
-  </head>
-  <body class="text-gray-800">
-    <header class="bg-white py-4 shadow-sm sticky top-0 z-50">
-      <nav class="bg-white">
-        <div class="container mx-auto px-4 md:flex items-center gap-6">
-          <!-- Logo -->
-          <div class="flex items-center justify-between md:w-auto w-full">
-            <a href="index.html">
-              <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3">
-            </a>
-            <!-- mobile menu icon -->
-            <div class="md:hidden flex items-center">
-              <button type="button" class="mobile-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                </svg>
-              </button>
+</head>
+
+<body class="text-gray-800">
+    <header class="bg-white py-2 shadow-sm sticky top-0 z-50 " style="border-bottom:1px solid #DbDbDb;">
+        <nav class="">
+            <div class="container mx-auto px-4 md:flex items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="index.html">
+                        <img src="HerTable.png" alt="HerTable Ventures" class="h-12 mr-3">
+                    </a>
+                    <!-- mobile menu icon -->
+                    <div class="md:hidden flex items-center">
+                        <button type="button" class="mobile-menu-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
+                    <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
+                    <!-- Dropdown menu -->
+                    <div class="relative">
+                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
+                            <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
+                            <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Strategy Engagement</a>
+                            <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Brand Building</a>
+                            <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Hands on Consulting</a>
+                            <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Digitization</a>
+                            <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Fundraising Support</a>
+                        </div>
+                    </div>
+                    <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
+                    <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
+                    <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
+                </div>
             </div>
-          </div>
-          <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
-            <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
-            <!-- Dropdown menu -->
-            <div class="relative">
-              <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
-                <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
-              </button>
-              <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
-                <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Strategy Engagement</a>
-                <a href="services.html#brand-building" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Brand Building</a>
-                <a href="services.html#hands-on-consulting" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Hands on Consulting</a>
-                <a href="services.html#digitization" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Digitization</a>
-                <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900">Fundraising Support</a>
-              </div>
-            </div>
-            <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
-            <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
-            <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
-      <section id="home" class="hero-background py-20 px-4 text-center" style="background-color: #00357a;">
+      <section id="home" class="hero-background py-20 px-4 text-center" style="background-color: #545454;">
         <div class="container mx-auto max-w-4xl">
-          <h1 class="text-5xl font-bold leading-tight mb-6 text-white">Our Services</h1>
+          <h1 class="text-5xl font-bold leading-tight text-white">
+            <img src="images/logo.png" class="inline-block" style="max-width: 80px;margin-top:-10px;">Our Services</h1>
         </div>
       </section>
       <section id="services" class="py-16 px-2 bg-white">
@@ -71,20 +73,22 @@
         </div>
       </section>
       <section id="strategy-engagement" class="py-16 px-2" style="background-color: #ffde59;scroll-margin-top:80px;">
+         <div class="container max-w-8xl">
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H10.png" class=" mx-auto">
+            <img src="images/H10.png" class="float-right justify-end align-middle object-contain">
           </div>
-          <div class="md:w-3/4">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">Strategy Engagement</h2>
-            <p class="text-lg text-gray-700 mb-6">A 360° deep dive into your food business — uncovering challenges, identifying opportunities, and creating a clear path forward.</p>
-          </div>
+          <div class="md:w-3/4  items-center content-center">
+            <h2 class="text-4xl font-bold text-gray-900 ">Strategy Engagement</h2>
+             </div>
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H11.png" class=" mx-auto align-middle ">
+         
           </div>
           <div class="md:w-3/4">
+            <p class="text-lg text-gray-700 mb-6">A 360° deep dive into your food business — uncovering challenges, identifying opportunities, and creating a clear path forward.</p>
+         
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
               <li>Business Health Analysis: Deep assessment of your P&L, pricing, cost structure, team productivity, and margins</li>
@@ -98,7 +102,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block text-center">
-            <img src="images/H8.png" class="mx-auto">
+           
           </div>
           <div class="md:w-3/4">
             <p class="text-lg text-gray-700 mb-2">
@@ -114,7 +118,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H12.png" class=" mx-auto">
+         
           </div>
           <div class="md:w-3/4">
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
@@ -125,74 +129,80 @@
             </ul>
           </div>
         </div>
+        </div>
       </section>
       <section id="brand-building" class="py-16 px-4  " style="background-color: #ddd;scroll-margin-top:80px;">
-        <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
-          <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H10.png" class=" mx-auto">
-          </div>
-          <div class="md:w-3/4">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">Brand Building</h2>
-            <p class="text-lg text-gray-700 mb-6">We help you define what makes your brand unforgettable — and ensure it shows up at every touchpoint.</p>
-          </div>
-        </div>
-        <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
-          <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H11.png" class=" mx-auto">
-          </div>
-          <div class="md:w-3/4">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-              <li>Brand Discovery Workshops</li>
-              <li>USP & Narrative Definition</li>
-              <li>Naming, Visual Language, Packaging Inputs</li>
-              <li>In-Market Positioning Strategy</li>
-            </ul>
-          </div>
-        </div>
-        <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
-          <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H12.png" class=" mx-auto">
-          </div>
-          <div class="md:w-3/4">
-            <p class="text-lg text-gray-700 mb-2">
-              <strong>Best For:</strong> Food brands, D2C, cafés, and restaurants looking to find the right positioning and standing out in a crowd.
-            </p>
-            <p class="text-lg text-gray-700 mb-6">
-              <strong>Duration:</strong> Hourly / Weekly engagements for at least 2-3 months.
-            </p>
-          </div>
-        </div>
-        <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
-          <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H8.png" class=" mx-auto">
-          </div>
-          <div class="md:w-3/4">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-2">
-              <li>A clear, differentiated brand identity that resonates with your target audience</li>
-              <li>Consistent brand expression across menus, spaces, packaging, and digital platforms</li>
-              <li>Stronger recall, customer loyalty, and positioning in the market</li>
-            </ul>
-          </div>
+        <div class="container max-w-8xl">
+            <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
+            <div class="md:w-1/4  items-center content-center hidden md:block">
+                <img src="images/H10.png" class="float-right justify-end align-middle object-contain">
+            </div>
+            <div class="md:w-3/4  items-center content-center">
+                <h2 class="text-4xl font-bold text-gray-900">Brand Building</h2>
+                </div>
+            </div>
+            <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
+            <div class="md:w-1/4  items-center content-center hidden md:block">
+            
+            </div>
+            <div class="md:w-3/4">
+                <p class="text-lg text-gray-700 mb-6">We help you define what makes your brand unforgettable — and ensure it shows up at every touchpoint.</p>
+            
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <li>Brand Discovery Workshops</li>
+                <li>USP & Narrative Definition</li>
+                <li>Naming, Visual Language, Packaging Inputs</li>
+                <li>In-Market Positioning Strategy</li>
+                </ul>
+            </div>
+            </div>
+            <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
+            <div class="md:w-1/4  items-center content-center hidden md:block">
+            
+            </div>
+            <div class="md:w-3/4">
+                <p class="text-lg text-gray-700 mb-2">
+                <strong>Best For:</strong> Food brands, D2C, cafés, and restaurants looking to find the right positioning and standing out in a crowd.
+                </p>
+                <p class="text-lg text-gray-700 mb-6">
+                <strong>Duration:</strong> Hourly / Weekly engagements for at least 2-3 months.
+                </p>
+            </div>
+            </div>
+            <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
+            <div class="md:w-1/4  items-center content-center hidden md:block">
+            
+            </div>
+            <div class="md:w-3/4">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>A clear, differentiated brand identity that resonates with your target audience</li>
+                <li>Consistent brand expression across menus, spaces, packaging, and digital platforms</li>
+                <li>Stronger recall, customer loyalty, and positioning in the market</li>
+                </ul>
+            </div>
+            </div>
         </div>
       </section>
       <section id="hands-on-consulting" class="py-16 px-4 " style="background-color: #ffde59;scroll-margin-top:80px;">
+         <div class="container max-w-8xl">
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H11.png" class=" mx-auto">
+            <img src="images/H11.png" class="float-right justify-end align-middle object-contain">
           </div>
-          <div class="md:w-3/4">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">Hands-On Consulting</h2>
-            <p class="text-lg text-gray-700 mb-6">We become an extension of your team — working on-site, every day, for 3 months to identify gaps, fix inefficiencies, and unlock real, lasting profitability.
-                <br> This is our most immersive and transformative engagement.</p>
+          <div class="md:w-3/4  items-center content-center">
+            <h2 class="text-4xl font-bold text-gray-900 ">Hands-On Consulting</h2>
+           
           </div>
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H10.png" class=" mx-auto">
+           
           </div>
           <div class="md:w-3/4">
+             <p class="text-lg text-gray-700 mb-6">We become an extension of your team — working on-site, every day, for 3 months to identify gaps, fix inefficiencies, and unlock real, lasting profitability.
+                <br> This is our most immersive and transformative engagement.</p>
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
               <li>Daily Operational Diagnostics (2–3 hours/day)</li>
@@ -207,7 +217,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H8.png" class=" mx-auto">
+          
           </div>
           <div class="md:w-3/4">
             <p class="text-lg text-gray-700 mb-2">
@@ -223,7 +233,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H12.png" class=" mx-auto">
+       
           </div>
           <div class="md:w-3/4">
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
@@ -236,22 +246,25 @@
             </ul>
           </div>
         </div>
+        </div>
       </section>
       <section id="digitization" class="py-16 px-4 " style="background-color: #ddd;scroll-margin-top:80px;">
+        <div class="container max-w-8xl">
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H7.png" class=" mx-auto">
+            <img src="images/H7.png" class="float-right justify-end align-middle object-contain">
           </div>
-          <div class="md:w-3/4">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">Digitization</h2>
-            <p class="text-lg text-gray-700 mb-6">Still stuck in spreadsheets, WhatsApp groups, and manual inventory logs? It's time to streamline chaos and unlock growth with our proprietary F&B software — built by a restaurant owner, tested in real-world conditions, and designed specifically for food businesses like yours.</p>
-          </div>
+          <div class="md:w-3/4  items-center content-center">
+            <h2 class="text-4xl font-bold text-gray-900 ">Digitization <span style="color:#cc0000;">(coming soon)</h2>
+            </div>
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H12.png" class=" mx-auto">
+   
           </div>
           <div class="md:w-3/4">
+            <p class="text-lg text-gray-700 mb-6">Still stuck in spreadsheets, WhatsApp groups, and manual inventory logs? It's time to streamline chaos and unlock growth with our proprietary F&B software — built by a restaurant owner, tested in real-world conditions, and designed specifically for food businesses like yours.</p>
+          
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
               <li>POS & Customer Journey Tools</li>
@@ -265,7 +278,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H8.png" class=" mx-auto">
+          
           </div>
           <div class="md:w-3/4">
             <p class="text-lg text-gray-700 mb-4">
@@ -280,7 +293,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H10.png" class=" mx-auto">
+         
           </div>
           <div class="md:w-3/4">
             <p class="text-lg text-gray-700 mb-2">
@@ -296,7 +309,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H11.png" class=" mx-auto">
+          
           </div>
           <div class="md:w-3/4">
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
@@ -308,23 +321,26 @@
             </ul>
           </div>
         </div>
+        </div>
       </section>
       <section id="fundraising-support" class="py-16 px-4" style="background-color: #ffde59;scroll-margin-top:80px;">
+         <div class="container max-w-8xl">
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H10.png" class=" mx-auto">
+            <img src="images/H10.png" class="float-right justify-end align-middle object-contain">
           </div>
-          <div class="md:w-3/4">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">Fundraising Support <span style="color:#cc0000;">(coming soon)</span>
+          <div class="md:w-3/4  items-center content-center">
+            <h2 class="text-4xl font-bold text-gray-900 ">Fundraising Support <span style="color:#cc0000;">(coming soon)</span>
             </h2>
-            <p class="text-lg text-gray-700 mb-6">We offer fundraising support <span class="font-semibold">only at our discretion</span>, for businesses that meet specific operational and financial benchmarks. <br>This ensures you're truly ready to raise — and to grow responsibly after the capital is deployed. Our approach is strategic, not transactional. <br>We <span class="font-semibold">assess, prepare, and guide</span> you through the funding journey — and we continue to stay involved post-raise to help you track and deploy capital wisely. </p>
-          </div>
+            </div>
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H12.png" class=" mx-auto">
+         
           </div>
           <div class="md:w-3/4">
+            <p class="text-lg text-gray-700 mb-6">We offer fundraising support <span class="font-semibold">only at our discretion</span>, for businesses that meet specific operational and financial benchmarks. <br>This ensures you're truly ready to raise — and to grow responsibly after the capital is deployed. Our approach is strategic, not transactional. <br>We <span class="font-semibold">assess, prepare, and guide</span> you through the funding journey — and we continue to stay involved post-raise to help you track and deploy capital wisely. </p>
+          
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">What's Included:</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
               <li>Financial Health Check</li>
@@ -337,7 +353,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H11.png" class=" mx-auto">
+       
           </div>
           <div class="md:w-3/4">
             <p class="text-lg text-gray-700 mb-4">
@@ -356,7 +372,7 @@
         </div>
         <div class="mb-12 md:flex  flex items-stretch  md:space-x-8">
           <div class="md:w-1/4  items-center content-center hidden md:block">
-            <img src="images/H8.png" class=" mx-auto">
+          
           </div>
           <div class="md:w-3/4">
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Results You Can Expect:</h3>
@@ -367,6 +383,7 @@
               <li>Guidance and oversight <span class="font-semibold">post-raise</span> to help drive ROI and accountability </li>
             </ul>
           </div>
+        </div>
         </div>
       </section>
     </main>
