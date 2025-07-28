@@ -11,12 +11,14 @@
     <meta property="og:url" content="https://hertableventures.com/about-us.html"/>
     <meta property="og:description" content="Fueling the Rise of Women in F&B"/>
     <meta property="og:image" content="https:/hertableventures.com/HerTable.png"/>
-    <style>
+      <style>
         @font-face {font-family: 'Giaza';src: url('Giaza.otf');}
           body {font-family: "Nunito", sans-serif;}
           h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
           .rounded-full{border-radius: 20px 0 20px 0;text-transform: uppercase;font-weight: 700;}
           a.menu-item:hover{ background-color: #ffde59;}
+          a.nav-item:hover{ font-weight:700;}
+          button.nav-item:hover{ font-weight:700;}
     </style>
 </head>
 
@@ -39,11 +41,11 @@
                     </div>
                 </div>
                 <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
-                    <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
+                    <a href="index.html" class="py-2 px-3 block text-gray-600 nav-item ">Home</a>
                     <!-- Dropdown menu -->
                     <div class="relative">
-                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
-                            <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
+                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded  nav-item">
+                            <span class="pointer-events-none select-none py-2 px-4 nav-item">Services</span>
                         </button>
                         <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
                             <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Strategy Engagement</a>
@@ -53,9 +55,9 @@
                             <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Fundraising Support</a>
                         </div>
                     </div>
-                    <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
-                    <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
-                    <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
+                    <a href="about-us.html" class="py-2 px-3 block nav-item">About Us</a>
+                    <a href="join-us.html" class="py-2 px-4 block nav-item">Join Us</a>
+                    <a href="contact-us.html" class="py-2 px-4 block nav-item">Contact Us</a>
                 </div>
             </div>
         </nav>

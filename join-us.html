@@ -18,6 +18,8 @@
           h1,h2,h3,h4,h5,h6 {font-family: 'Giaza', serif;}
           .rounded-full{border-radius: 20px 0 20px 0;text-transform: uppercase;font-weight: 700;}
           a.menu-item:hover{ background-color: #ffde59;}
+          a.nav-item:hover{ font-weight:700;}
+          button.nav-item:hover{ font-weight:700;}
     </style>
 </head>
 
@@ -40,11 +42,11 @@
                     </div>
                 </div>
                 <div class="bg-white hidden md:flex md:flex-row  md:flex-grow flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0  navigation-menu">
-                    <a href="index.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900  ">Home</a>
+                    <a href="index.html" class="py-2 px-3 block text-gray-600 nav-item ">Home</a>
                     <!-- Dropdown menu -->
                     <div class="relative">
-                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">
-                            <span class="pointer-events-none select-none py-2 px-4 text-gray-600">Services</span>
+                        <button type="button" class="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded  nav-item">
+                            <span class="pointer-events-none select-none py-2 px-4 nav-item">Services</span>
                         </button>
                         <div class="dropdown-menu absolute hidden bg-white text-gray-900 rounded-b-lg pb-2 w-48">
                             <a href="services.html#strategy-engagement" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Strategy Engagement</a>
@@ -54,9 +56,9 @@
                             <a href="services.html#fundraising-support" class="block px-6 py-2 hover:bg-sky-800 text-gray-900 menu-item">Fundraising Support</a>
                         </div>
                     </div>
-                    <a href="about-us.html" class="py-2 px-3 block text-gray-600 hover:text-gray-900">About Us</a>
-                    <a href="join-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Join Us</a>
-                    <a href="contact-us.html" class="py-2 px-4 block text-gray-600 hover:text-gray-900">Contact Us</a>
+                    <a href="about-us.html" class="py-2 px-3 block nav-item">About Us</a>
+                    <a href="join-us.html" class="py-2 px-4 block nav-item">Join Us</a>
+                    <a href="contact-us.html" class="py-2 px-4 block nav-item">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -64,28 +66,28 @@
     <main>
 
     <section id="home" class="hero-background py-20 px-4 text-center" style="background-color: #545454;">
-        <div class="container mx-auto max-w-4xl">
+ <div class="container mx-auto max-w-8xl">
           <h1 class="text-5xl font-bold leading-tight text-white">
             <img src="images/logo.png" class="inline-block" style="max-width: 80px;margin-top:-10px;">Join us</h1>
             </div>
-        </section>
+    </section>
         <section id="home2" class="py-4 px-2 text-center" style="">
-
+             <div class="container  max-w-8xl">
             <div class="mb-6 md:flex  flex items-stretch  md:space-x-8">
                 <div class="md:w-1/6  items-center content-center hidden md:block">
-                    <img src="images/H10.png" class="float-right align-middle ">
-
+                    <img src="images/H12.png" class="float-right align-middle ">
                 </div>
                 <div class="md:w-5/6  items-center content-center text-left ">
                     <h2 class="text-4xl font-bold text-gray-800 "> Want to Collaborate or Contribute?</h2>
                 </div>
             </div>
+        </div>
         </section>
 
-        <section id="join-us" class="py-1 px-4 mb-12 bg-white text-center">
+        <section id="join-us" class="py-4 px-2 mb-12 bg-white text-center">
+              <div class="container  max-w-8xl">
             <div class="mb-6 md:flex  flex items-stretch  md:space-x-8">
                 <div class="md:w-1/6  items-center content-center hidden md:block">
-                  
                 </div>
                 <div class="md:w-5/6">
                     <p class="text-lg text-gray-700 mb-6  text-justify"> We're always looking to collaborate with designers, chefs, strategists, trainers, F&B tech builders, and brand creators who believe in the power of women-led businesses. </p>
@@ -96,6 +98,7 @@
                 </div>
             </div>
             <a href="contact-us.html" class="px-6 py-2 rounded-full text-lg hover:bg-blue-700 transition duration-300" style="background-color: #545454;color:white;">Let's talk.</a>
+       </div>
         </section>
 
 
